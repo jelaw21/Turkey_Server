@@ -2,8 +2,8 @@
   "minimumVersion" : 1,
   "packages" : [
     {
-      "title" : "Turkey Day!!",
-      "name" : "DDSS",
+      "title" : "Turkey Day Server",
+      "name" : "ddss",
       "version" : "1.0.0",
       "location" : "ddss.json",
       "priority" : 0
