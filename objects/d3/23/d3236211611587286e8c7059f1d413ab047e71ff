@@ -1,0 +1,34 @@
+
+val boost = <contenttweaker:boost>;
+
+
+// Automatic Templates ====================================================
+
+mods.forestry.Carpenter.addRecipe(<storagedrawers:upgrade_template> * 4, [[<ore:stickWood>, <actuallyadditions:block_misc:4>, <ore:stickWood>], [<actuallyadditions:block_misc:4>, <rftools:filter_module>, <actuallyadditions:block_misc:4>], [<ore:stickWood>, <actuallyadditions:block_misc:4>, <ore:stickWood>]], 50);
+
+mods.forestry.Carpenter.addRecipe(<storagedrawers:upgrade_template> * 6, [[<ore:stickWood>, <actuallyadditions:block_misc:4>, <ore:stickWood>], [<actuallyadditions:block_misc:4>, <rftools:filter_module>, <actuallyadditions:block_misc:4>], [boost, <actuallyadditions:block_misc:4>, <ore:stickWood>]], 4);
+
+// Void Upgrades ====================================================
+
+mods.forestry.Carpenter.addRecipe(<storagedrawers:upgrade_void> * 2, [[<ore:stickWood>, <extendedcrafting:material:36>, <ore:stickWood>], [<extendedcrafting:material:36>, <storagedrawers:upgrade_template>, <extendedcrafting:material:36>], [<actuallyadditions:block_misc:4>, <ore:stickWood>, <actuallyadditions:block_misc:4>]], 50);
+
+mods.forestry.Carpenter.addRecipe(<storagedrawers:upgrade_void> * 4, [[<ore:stickWood>, <extendedcrafting:material:36>, <ore:stickWood>], [<extendedcrafting:material:36>, <storagedrawers:upgrade_template>, <extendedcrafting:material:36>], [<actuallyadditions:block_misc:4>, boost, <actuallyadditions:block_misc:4>]], 4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

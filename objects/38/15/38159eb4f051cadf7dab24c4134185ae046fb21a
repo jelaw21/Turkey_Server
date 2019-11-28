@@ -1,0 +1,117 @@
+
+
+
+
+
+// Mutatron ===============================================================================
+recipes.remove(<gendustry:mutatron>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:mutatron>, [
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:genetics_processor>, <ore:oc:circuitChip2>, <gendustry:power_module>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <fluidtank:blocktank2>, <ore:circuitElite>, <forestry:sturdy_machine>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:bee_receptacle>, <ore:oc:circuitChip2>, <gendustry:bee_receptacle>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>]
+]);
+
+// Mutagen producer ===============================================================================
+recipes.remove(<gendustry:mutagen_producer>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:mutagen_producer>, [
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:power_module>, <gendustry:mutagen_tank>, <gendustry:power_module>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <fluidtank:blocktank2>, <ore:circuitElite>, <forestry:sturdy_machine>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <ore:oc:circuitChip2>, <rftools:filter_module>, <ore:oc:circuitChip2>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>]
+]);
+
+// industrial Apiary ===============================================================================
+recipes.remove(<gendustry:industrial_apiary>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:industrial_apiary>, [
+	[<ore:plateRefinedGlowstone>, <ore:plateAlumite>, <ore:plateRefinedGlowstone>, <ore:plateAlumite>, <ore:plateRefinedGlowstone>], 
+	[<ore:plateAlumite>, <ore:oc:circuitChip2>, <gendustry:mutagen_tank>, <ore:oc:circuitChip2>, <ore:plateAlumite>], 
+	[<ore:plateRefinedGlowstone>, <forestry:sturdy_machine>, <ore:circuitElite>, <fluidtank:blocktank2>, <ore:plateRefinedGlowstone>], 
+	[<ore:plateAlumite>, <gendustry:bee_receptacle>, <rftools:filter_module>, <gendustry:bee_receptacle>, <ore:plateAlumite>], 
+	[<ore:plateRefinedGlowstone>, <ore:plateAlumite>, <ore:plateRefinedGlowstone>, <ore:plateAlumite>, <ore:plateRefinedGlowstone>]
+]);
+
+// Genetic imprinter ===============================================================================
+recipes.remove(<gendustry:imprinter>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:imprinter>, [
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <ore:alloyElite>, <gendustry:power_module>, <ore:alloyElite>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:oc:circuitChip2>, <ore:circuitElite>, <ore:oc:circuitChip2>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:bee_receptacle>, <gendustry:power_module>, <gendustry:bee_receptacle>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>]
+]);
+
+// Genetic Sampler  ===============================================================================
+recipes.remove(<gendustry:sampler>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:sampler>, [
+	[<ore:platePalisEmpowered>, <ore:plateSuperium>, <ore:platePalisEmpowered>, <ore:plateSuperium>, <ore:platePalisEmpowered>], 
+	[<ore:plateSuperium>, <gendustry:bee_receptacle>, <ore:glassReinforced>, <gendustry:bee_receptacle>, <ore:plateSuperium>], 
+	[<ore:platePalisEmpowered>, <ore:oc:circuitChip2>, <ore:circuitElite>, <ore:oc:circuitChip2>, <ore:platePalisEmpowered>], 
+	[<ore:plateSuperium>, <gendustry:genetics_processor>, <ore:glassReinforced>, <gendustry:power_module>, <ore:plateSuperium>], 
+	[<ore:platePalisEmpowered>, <ore:plateSuperium>, <ore:platePalisEmpowered>, <ore:plateSuperium>, <ore:platePalisEmpowered>]
+]);
+
+// Advancet Mutatron  ===============================================================================
+recipes.remove(<gendustry:mutatron_advanced>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:mutatron_advanced>, [
+	[<ore:platePalisEmpowered>, <ore:plateSupremium>, <ore:platePalisEmpowered>, <ore:plateSupremium>, <ore:platePalisEmpowered>], 
+	[<ore:plateSupremium>, <ore:oc:circuitChip3>, <fluidtank:blocktank2>, <ore:oc:circuitChip3>, <ore:plateSupremium>], 
+	[<ore:platePalisEmpowered>, <gendustry:bee_receptacle>, <ore:circuitElite>, <gendustry:bee_receptacle>, <ore:platePalisEmpowered>], 
+	[<ore:plateSupremium>, <gendustry:genetics_processor>, <ore:glassReinforced>, <gendustry:genetics_processor>, <ore:plateSupremium>], 
+	[<ore:platePalisEmpowered>, <ore:plateSupremium>, <ore:platePalisEmpowered>, <ore:plateSupremium>, <ore:platePalisEmpowered>]
+]);
+
+// Protein Liquifier  ===============================================================================
+recipes.remove(<gendustry:liquifier>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:liquifier>, [
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <rftools:filter_module>, <forestry:sturdy_machine>, <extrautils2:filter>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:blockGlassColorless>, <ore:circuitElite>, <ore:blockGlassColorless>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:power_module>, <fluidtank:blocktank2>, <gendustry:power_module>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>]
+]);
+
+// DNA Extractor  ===============================================================================
+recipes.remove(<gendustry:extractor>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:extractor>, [
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <rftoolscontrol:cpu_core_1000>, <fluidtank:blocktank2>, <gendustry:power_module>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <gendustry:genetics_processor>, <ore:circuitElite>, <gendustry:genetics_processor>, <ore:platePalisEmpowered>], 
+	[<ore:plateAlumite>, <ore:oc:circuitChip2>, <forestry:sturdy_machine>, <ore:oc:circuitChip2>, <ore:plateAlumite>], 
+	[<ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>, <ore:plateAlumite>, <ore:platePalisEmpowered>]
+]);
+
+// Genetic transpoer  ===============================================================================
+recipes.remove(<gendustry:transposer>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:transposer>, [
+	[<ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>], 
+	[<ore:plateAlumite>, <forestry:sturdy_machine>, <fluidtank:blocktank2>, <gendustry:power_module>, <ore:plateAlumite>], 
+	[<ore:plateDiamatineEmpowered>, <ore:glassReinforced>, <ore:circuitElite>, <ore:glassReinforced>, <ore:plateDiamatineEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:genetics_processor>, <rftoolscontrol:cpu_core_1000>, <gendustry:genetics_processor>, <ore:plateAlumite>], 
+	[<ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>]
+]);
+
+// Genetic Replicator  ===============================================================================
+recipes.remove(<gendustry:replicator>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <gendustry:replicator>, [
+	[<ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>], 
+	[<ore:plateAlumite>, <gendustry:genetics_processor>, <forestry:sturdy_machine>, <gendustry:genetics_processor>, <ore:plateAlumite>], 
+	[<ore:plateDiamatineEmpowered>, <gendustry:power_module>, <ore:circuitElite>, <gendustry:power_module>, <ore:plateDiamatineEmpowered>], 
+	[<ore:plateAlumite>, <fluidtank:blocktank2>, <rftoolscontrol:cpu_core_1000>, <fluidtank:blocktank2>, <ore:plateAlumite>], 
+	[<ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>, <ore:plateAlumite>, <ore:plateDiamatineEmpowered>]
+]);
+
+
+
+
+
+
+
+
+
+
+
+
+

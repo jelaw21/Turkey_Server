@@ -1,0 +1,95 @@
+
+
+
+mods.jei.JEI.removeAndHide(<extratrees:machine>);
+recipes.remove(<extratrees:machine>);
+
+
+// Hide Compartments ================================================================
+mods.jei.JEI.removeAndHide(<binniecore:storage>);
+mods.jei.JEI.removeAndHide(<binniecore:storage:1>);
+mods.jei.JEI.removeAndHide(<binniecore:storage:2>);
+mods.jei.JEI.removeAndHide(<binniecore:storage:3>);
+mods.jei.JEI.removeAndHide(<binniecore:storage:4>);
+mods.jei.JEI.removeAndHide(<binniecore:storage:5>);
+
+
+// Fruit Press ================================================================
+recipes.remove(<extratrees:machine:4>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <extratrees:machine:4>, [
+	[<ore:plateBronze>, <ore:plateTin>, <ore:plateBronze>, <ore:plateTin>, <ore:plateBronze>], 
+	[<ore:plateTin>, <ore:blockGlassColorless>, <ore:circuitBasic>, <ore:blockGlassColorless>, <ore:plateTin>], 
+	[<ore:plateBronze>, <ore:craftingPiston>, <ore:blockGlassColorless>, <ore:craftingPiston>, <ore:plateBronze>], 
+	[<ore:plateTin>, <ore:chestWood>, <stevescarts:modulecomponents:65>, <fluidtank:blocktank1>, <ore:plateTin>], 
+	[<ore:plateBronze>, <ore:plateTin>, <ore:plateBronze>, <ore:plateTin>, <ore:plateBronze>]
+]);
+
+
+/*
+// Compartment================================================================
+recipes.remove(<binniecore:storage:*>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <binniecore:storage>, [
+	[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>, <ore:plateWood>, <ore:plateWood>], 
+	[<ore:plateWood>, <ore:chest>, <immersiveengineering:connector:9>, <ore:chest>, <ore:plateWood>], 
+	[<ore:plateWood>, <ore:chest>, <ore:bookshelfOak>, <ore:chest>, <ore:plateWood>], 
+	[<ore:plateWood>, <immersiveengineering:material:8>, <ore:bookshelfOak>, <immersiveengineering:material:8>, <ore:plateWood>], 
+	[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>, <ore:plateWood>, <ore:plateWood>]
+]);
+
+// Copper Compartment================================================================
+recipes.remove(<binniecore:storage:1>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <binniecore:storage:1>, [
+	[<ore:plateCopper>, <ore:plateWood>, <ore:plateCopper>, <ore:plateWood>, <ore:plateCopper>], 
+	[<ore:plateWood>, <immersiveengineering:connector:9>, <ore:gearCopper>, <immersiveengineering:connector:9>, <ore:plateWood>], 
+	[<ore:plateCopper>, <ore:blockGlassColorless>, <binniecore:storage>, <ore:blockGlassColorless>, <ore:plateCopper>], 
+	[<ore:plateWood>, <minecraft:stone_button>, <ore:gearCopper>, <minecraft:stone_button>, <ore:plateWood>], 
+	[<ore:plateCopper>, <ore:plateWood>, <ore:plateCopper>, <ore:plateWood>, <ore:plateCopper>]
+]);
+
+// Bronze Compartment================================================================
+recipes.remove(<binniecore:storage:2>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <binniecore:storage:2>, [
+	[<ore:plateBronze>, <ore:plateWood>, <ore:plateBronze>, <ore:plateWood>, <ore:plateBronze>], 
+	[<ore:plateWood>, <immersiveengineering:connector:9>, <ore:gearBronze>, <immersiveengineering:connector:9>, <ore:plateWood>], 
+	[<ore:plateBronze>, <ore:blockGlassColorless>, <binniecore:storage:1>, <ore:blockGlassColorless>, <ore:plateBronze>], 
+	[<ore:plateWood>, <minecraft:stone_button>, <ore:gearBronze>, <minecraft:stone_button>, <ore:plateWood>], 
+	[<ore:plateBronze>, <ore:plateWood>, <ore:plateBronze>, <ore:plateWood>, <ore:plateBronze>]
+]);
+
+// Iron Compartment================================================================
+recipes.remove(<binniecore:storage:3>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <binniecore:storage:3>, [
+	[<ore:plateIron>, <ore:plateWood>, <ore:plateIron>, <ore:plateWood>, <ore:plateIron>], 
+	[<ore:plateWood>, <immersiveengineering:connector:9>, <ore:gearIron>, <immersiveengineering:connector:9>, <ore:plateWood>], 
+	[<ore:plateIron>, <ore:blockGlassColorless>, <binniecore:storage:2>, <ore:blockGlassColorless>, <ore:plateIron>], 
+	[<ore:plateWood>, <minecraft:stone_button>, <ore:gearIron>, <minecraft:stone_button>, <ore:plateWood>], 
+	[<ore:plateIron>, <ore:plateWood>, <ore:plateIron>, <ore:plateWood>, <ore:plateIron>]
+]);
+
+// Gold Compartment================================================================
+recipes.remove(<binniecore:storage:4>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <binniecore:storage:4>, [
+	[<ore:plateGold>, <ore:plateWood>, <ore:plateGold>, <ore:plateWood>, <ore:plateGold>], 
+	[<ore:plateWood>, <immersiveengineering:connector:9>, <ore:gearGold>, <immersiveengineering:connector:9>, <ore:plateWood>], 
+	[<ore:plateGold>, <ore:blockGlassColorless>, <binniecore:storage:3>, <ore:blockGlassColorless>, <ore:plateGold>], 
+	[<ore:plateWood>, <minecraft:stone_button>, <ore:gearGold>, <minecraft:stone_button>, <ore:plateWood>], 
+	[<ore:plateGold>, <ore:plateWood>, <ore:plateGold>, <ore:plateWood>, <ore:plateGold>]
+]);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

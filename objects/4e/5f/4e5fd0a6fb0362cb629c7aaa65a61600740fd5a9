@@ -1,0 +1,26 @@
+
+val boost = <contenttweaker:boost>;
+val releather = <v0idssmartbackpacks:reinforced_leather>;
+
+// Upgrade Base ============================================================================================================
+
+mods.forestry.Carpenter.addRecipe(<v0idssmartbackpacks:upgrade_base> * 3, [[releather, <forestry:crafting_material:3>, releather], [<forestry:crafting_material:3>, <rftools:storage_module>, <forestry:crafting_material:3>], [releather, <forestry:crafting_material:3>, releather]], 50, <liquid:crystalline> * 5000);
+
+mods.forestry.Carpenter.addRecipe(<v0idssmartbackpacks:upgrade_base> * 4, [[boost, <forestry:crafting_material:3>, releather], [<forestry:crafting_material:3>, <rftools:storage_module>, <forestry:crafting_material:3>], [releather, <forestry:crafting_material:3>, releather]], 4, <liquid:crystalline> * 5000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

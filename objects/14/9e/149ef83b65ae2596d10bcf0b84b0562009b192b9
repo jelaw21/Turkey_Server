@@ -1,0 +1,67 @@
+
+
+
+// Neutronium Collector ================================================================
+mods.avaritia.ExtremeCrafting.remove(<avaritia:neutron_collector>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
+	[<ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>], 
+	[<ore:plateIridium>, <ore:blockSteel>, <botania:storage:3>, <ore:blockSteel>, <extendedcrafting:material:13>, <ore:blockSteel>, <botania:storage:3>, <ore:blockSteel>, <ore:plateIridium>], 
+	[<ore:plateCrystalMatrix>, <stevescarts:blockmetalstorage:2>, <botania:quartztypeelf>, <ore:blockVibranium>, <contenttweaker:card_3>, <ore:blockVibranium>, <botania:quartztypeelf>, <stevescarts:blockmetalstorage:2>, <ore:plateCrystalMatrix>], 
+	[<ore:plateIridium>, <ore:blockSteel>, <overloaded:compressed_obsidian:4>, <ore:gearEvilMetal>, <overloaded:linking_card>, <ore:gearEvilMetal>, <overloaded:compressed_obsidian:4>, <ore:blockSteel>, <ore:plateIridium>], 
+	[<ore:plateCrystalMatrix>, <ore:blockSteel>, <actuallyadditions:item_battery_triple>, <ore:circuitMaster>, <extendedcrafting:singularity:3>, <ore:circuitMaster>, <actuallyadditions:item_battery_quadruple>, <ore:blockSteel>, <ore:plateCrystalMatrix>], 
+	[<ore:plateIridium>, <ore:blockSteel>, <overloaded:compressed_obsidian:4>, <ore:gearTerrasteel>, <ore:oc:circuitChip3>, <ore:gearTerrasteel>, <overloaded:compressed_obsidian:4>, <ore:blockSteel>, <ore:plateIridium>], 
+	[<ore:plateCrystalMatrix>, <stevescarts:blockmetalstorage:2>, <botania:quartztypeelf>, <ore:blockVibranium>, <contenttweaker:card_3>, <ore:blockVibranium>, <botania:quartztypeelf>, <stevescarts:blockmetalstorage:2>, <ore:plateCrystalMatrix>], 
+	[<ore:plateIridium>, <ore:blockSteel>, <botania:storage:3>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <botania:storage:3>, <ore:blockSteel>, <ore:plateIridium>], 
+	[<ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCrystalMatrix>]
+]);
+
+// Crystal MAtrix Ingot ================================================================
+recipes.removeByRecipeName("avaritia:items/resource/crystal_matrix_ingot");
+recipes.addShaped(<avaritia:resource:1>, [[<avaritia:resource>, <ore:netherStar>, <avaritia:resource>],[<ore:plateIridium>, <extendedcrafting:material:32>, <ore:plateIridium>], [<avaritia:resource>, <ore:netherStar>, <avaritia:resource>]]);
+
+// Neutronium Compressor ================================================================
+mods.avaritia.ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
+
+mods.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:neutronium_compressor>, [<contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <ore:oc:circuitChip3>, <ore:gearCosmicNeutronium>, <actuallyadditions:block_crystal_empowered:2>, <ore:dustMana>, <actuallyadditions:block_crystal_empowered:2>, <ore:gearCosmicNeutronium>, <ore:oc:circuitChip3>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <extendedcrafting:singularity:1>, <techreborn:storage2:1>, <contenttweaker:card_3>, <ore:reflectorIridium>, <contenttweaker:card_3>, <techreborn:storage2:1>, <extendedcrafting:singularity:32>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <rftoolscontrol:cpu_core_2000>, <ore:circuitMaster>, <techreborn:part:12>, <ore:circuitMaster>, <techreborn:part:12>, <ore:circuitMaster>, <rftoolscontrol:cpu_core_2000>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:circuitMaster>, <ore:gearCosmicNeutronium>, <ore:blockAdamant>, <ore:blockUltimate>, <ore:blockAdamant>, <ore:gearCosmicNeutronium>, <ore:circuitMaster>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <rftoolscontrol:cpu_core_2000>, <ore:circuitMaster>, <actuallyadditions:item_battery_quadruple>, <ore:circuitMaster>, <actuallyadditions:item_battery_quadruple>, <ore:circuitMaster>, <rftoolscontrol:cpu_core_2000>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <extendedcrafting:singularity:23>, <techreborn:storage2:1>, <ore:reflectorIridium>, <fluidtank:blocktank3:3>, <ore:reflectorIridium>, <techreborn:storage2:1>, <extendedcrafting:singularity:25>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <ore:oc:circuitChip3>, <ore:gearCosmicNeutronium>, <actuallyadditions:block_crystal_empowered:4>, <ore:oc:cpu3>, <actuallyadditions:block_crystal_empowered:4>, <ore:gearCosmicNeutronium>, <ore:oc:circuitChip3>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>, <ore:plateCrystalMatrix>, <contenttweaker:plate_vibra>]);
+
+// Infinity Ingot ================================================================
+mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:6>);
+
+mods.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:resource:6>, [<ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <evilcraft:promise_acceptor:2>, <ore:plateDraconium>, <techreborn:storage2:1>, <ore:plateDraconium>, <evilcraft:promise_acceptor:2>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <contenttweaker:plate_vibra>, <evilcraft:promise_acceptor:2>, <ore:plateDraconium>, <extendedcrafting:singularity_custom:3>, <ore:plateDraconium>, <evilcraft:promise_acceptor:2>, <contenttweaker:plate_vibra>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>, <ore:plateCosmicNeutronium>, <ore:plateIridium>]);
+
+
+// Avaritia Craftingtable================================================================
+recipes.remove(<avaritia:extreme_crafting_table>);
+recipes.addShaped(<avaritia:extreme_crafting_table>, [[<moreplates:crystal_matrix_plate>, <contenttweaker:card_2>, <moreplates:crystal_matrix_plate>],[<moreplates:crystal_matrix_plate>, <avaritia:double_compressed_crafting_table>, <moreplates:crystal_matrix_plate>], [<moreplates:crystal_matrix_plate>, <extendedcrafting:singularity_custom:3>, <moreplates:crystal_matrix_plate>]]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

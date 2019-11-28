@@ -1,0 +1,27 @@
+
+
+
+mods.jei.JEI.removeAndHide(<iceandfire:sapphire_block>); //Wrong Sapphire block
+mods.jei.JEI.removeAndHide(<techreborn:storage2:5>); //Wrong Sapphire block
+mods.jei.JEI.removeAndHide(<techreborn:storage2:4>); //Wrong Sapphire block
+mods.jei.JEI.removeAndHide(<techreborn:storage2:3>); //Wrong Sapphire block
+
+
+// Bone Block ===================================================================================
+recipes.remove(<ore:blockBone>);
+recipes.addShaped(<minecraft:bone_block>, [[<ore:bone>, <ore:bone>, <ore:bone>],[<ore:bone>, <ore:artisansHammer>.reuse().transformDamage(12), <ore:bone>], [<ore:bone>, <ore:bone>, <ore:bone>]]);
+mods.thermalexpansion.Factorizer.addRecipeCombine(<minecraft:bone> * 8, <minecraft:bone_block>);
+
+
+// Force Palladium Block in smeltery and factorizer ===================================================================================
+recipes.remove(<ore:blockPalladium>);
+
+
+
+// Iridium Block ===================================================================================
+recipes.remove(<ore:blockIridium>);
+
+// Remove wrong Silver block ===================================================================================
+recipes.remove(<iceandfire:silver_block>);
+
+

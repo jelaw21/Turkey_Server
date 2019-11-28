@@ -1,0 +1,51 @@
+var releather = <v0idssmartbackpacks:reinforced_leather>;
+
+// Tool-tip Warning ===============================================================================
+<v0idssmartbackpacks:backpack>.addTooltip(format.green("Shift + B to Equip / B to open"));
+<v0idssmartbackpacks:backpack>.addTooltip(format.red("Remove the content before you upgrade your backpack! Otherwise everything is lost... :O"));
+<v0idssmartbackpacks:backpack>.addTooltip(format.green("Surround with dye in crafting grid to change color"));
+
+<v0idssmartbackpacks:backpack_reinforced>.addTooltip(format.green("Shift + B to Equip / B to open"));
+<v0idssmartbackpacks:backpack_reinforced>.addTooltip(format.red("Remove the content before you upgrade your backpack! Otherwise everything is lost... :O"));
+<v0idssmartbackpacks:backpack_reinforced>.addTooltip(format.green("Surround with dye in crafting grid to change color"));
+
+<v0idssmartbackpacks:backpack_advanced>.addTooltip(format.green("Shift + B to Equip / B to open"));
+<v0idssmartbackpacks:backpack_advanced>.addTooltip(format.red("Remove the content before you upgrade your backpack! Otherwise everything is lost... :O"));
+<v0idssmartbackpacks:backpack_advanced>.addTooltip(format.green("Surround with dye in crafting grid to change color"));
+
+<v0idssmartbackpacks:backpack_ultimate>.addTooltip(format.green("Shift + B to Equip / B to open"));
+<v0idssmartbackpacks:backpack_ultimate>.addTooltip(format.red("Remove the content before you upgrade your backpack! Otherwise everything is lost... :O"));
+<v0idssmartbackpacks:backpack_ultimate>.addTooltip(format.green("Surround with dye in crafting grid to change color"));
+
+// Reinforced Backpack ===============================================================================
+recipes.remove(<v0idssmartbackpacks:backpack_reinforced>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <v0idssmartbackpacks:backpack_reinforced>, [
+	[null, null, null, null, null], 
+	[releather, <ore:plateIron>, <ore:plateIron>, <ore:plateIron>, releather], 
+	[releather, releather, <ironchest:iron_chest>, releather, releather], 
+	[releather, <ore:plateIron>, <v0idssmartbackpacks:backpack>, <ore:plateIron>, releather], 
+	[releather, releather, releather, releather, releather]
+]);
+
+// Advanced Backpack ===============================================================================
+recipes.remove(<v0idssmartbackpacks:backpack_advanced>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <v0idssmartbackpacks:backpack_advanced>, [
+	[null, null, null, null, null], 
+	[releather, <ore:plateGold>, <ore:plateGold>, <ore:plateGold>, releather], 
+	[releather, releather, <ironchest:iron_chest:1>, releather, releather], 
+	[releather, <ore:plateGold>, <v0idssmartbackpacks:backpack_reinforced>, <ore:plateGold>, releather], 
+	[releather, releather, releather, releather, releather]
+]);
+
+// Ultimate Backpack ===============================================================================
+recipes.remove(<v0idssmartbackpacks:backpack_ultimate>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <v0idssmartbackpacks:backpack_ultimate>, [
+	[null, null, null, null, null], 
+	[releather, <ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>, releather], 
+	[releather, releather, <ironchest:iron_chest:2>, releather, releather], 
+	[releather, <ore:itemCompressedDiamond>, <v0idssmartbackpacks:backpack_advanced>, <ore:itemCompressedDiamond>, releather], 
+	[releather, releather, releather, releather, releather]
+]);

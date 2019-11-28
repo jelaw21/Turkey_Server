@@ -1,0 +1,400 @@
+
+
+import mods.artisanworktables.builder.RecipeBuilder;
+
+val releather = <v0idssmartbackpacks:reinforced_leather>;
+
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_compressor>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_grinding>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_water_spring>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_soulbound>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_mending>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_generator_nuclear>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_generator_em>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_charging>);
+mods.jei.JEI.removeAndHide(<v0idssmartbackpacks:upgrade_pulling>);
+
+
+/*
+  .setShaped([
+    [null, null, null, null, null],
+    [null, null, null, null, null],
+	[null, null, null, null, null],
+	[null, null, null, null, null],
+    [null, null, null, null, null]])
+	
+	<liquid:silicone>
+*/
+
+
+// Upgrade Base ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_base>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <forestry:crafting_material:3>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <forestry:crafting_material:3>, <rftools:storage_module>, <forestry:crafting_material:3>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <forestry:crafting_material:3>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 6000)
+  .addOutput(<v0idssmartbackpacks:upgrade_base> * 2)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();
+
+// Air Bags Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_air_bags>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <immersiveengineering:toolupgrade>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <immersiveengineering:toolupgrade>, <v0idssmartbackpacks:upgrade_base>, <immersiveengineering:toolupgrade>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <fluidtank:blocktank2:2>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 10000)
+  .addOutput(<v0idssmartbackpacks:upgrade_air_bags>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();  
+
+// Durability/Damage Bar Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_damage_bar>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <storagedrawers:upgrade_status:1>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <storagedrawers:upgrade_status:1>, <v0idssmartbackpacks:upgrade_base>, <storagedrawers:upgrade_status:1>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <storagedrawers:upgrade_status:1>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_damage_bar>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();   
+ 
+// Depositing Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_depositing>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <actuallyadditions:block_inputter>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <actuallyadditions:block_inputter>, <v0idssmartbackpacks:upgrade_base>, <actuallyadditions:block_inputter>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <actuallyadditions:block_inputter>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_depositing>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();
+  
+//  Ender Chest Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_ender_chest>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <minecraft:ender_chest>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_ender_chest>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();
+  
+// Ender Storage Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_ender_storage>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <thermalfoundation:material:1028>, <enderstorage:ender_pouch>, <thermalfoundation:material:1028>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_ender_storage>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();
+  
+// Experience Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_experience>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <cyclicmagic:exp_pylon>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <v0idssmartbackpacks:upgrade_base>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_experience>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();
+  
+// Experience Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_feeding>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <darkutils:charm_gluttony>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <industrialforegoing:meat_feeder>, <v0idssmartbackpacks:upgrade_base>, <rftools:saturationplus_module>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <spiceoflife:lunchbox>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_feeding>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();  
+  
+// Experience Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_filter>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <extrautils2:filter>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[<v0idssmartbackpacks:reinforced_leather>, <extraplanets:tools:3>, <v0idssmartbackpacks:upgrade_base>, <rftools:filter_module>, <v0idssmartbackpacks:reinforced_leather>], 
+	[null, <v0idssmartbackpacks:reinforced_leather>, <rftools:item_filter>, <v0idssmartbackpacks:reinforced_leather>, null], 
+	[null, null, <v0idssmartbackpacks:reinforced_leather>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_filter>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();  
+  
+// Nesting Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_nesting>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:leatherHardened>, null, null], 
+	[null, <ore:leatherHardened>, <ore:itemCompressedDiamond>, <ore:leatherHardened>, null], 
+	[<ore:leatherHardened>, <v0idssmartbackpacks:upgrade_base>, <rftools:storage_module:1>, <v0idssmartbackpacks:upgrade_base>, <ore:leatherHardened>], 
+	[null, <ore:leatherHardened>, <ore:itemCompressedDiamond>, <ore:leatherHardened>, null], 
+	[null, null, <ore:leatherHardened>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_nesting>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+  
+// Sorting Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_sorting>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:leatherHardened>, null, null], 
+	[null, <ore:leatherHardened>, <ore:enderpearl>, <ore:leatherHardened>, null], 
+	[<ore:leatherHardened>, <ore:enderpearl>, <v0idssmartbackpacks:upgrade_base>, <ore:enderpearl>, <ore:leatherHardened>], 
+	[null, <ore:leatherHardened>, <ore:enderpearl>, <ore:leatherHardened>, null], 
+	[null, null, <ore:leatherHardened>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_sorting>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();  
+  
+// Smelting Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_smelting>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:plateIntermedium>, null, null], 
+	[null, <ore:furnaceStone>, <minecraft:coal_block>, <ore:furnaceStone>, null], 
+	[<ore:plateIntermedium>, <minecraft:coal_block>, <v0idssmartbackpacks:upgrade_base>, <minecraft:coal_block>, <ore:plateIntermedium>], 
+	[null, <ore:furnaceStone>, <minecraft:coal_block>, <ore:furnaceStone>, null], 
+	[null, null, <ore:plateIntermedium>, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_smelting>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();    
+  
+// Light Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_lighting>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, null, null, null], 
+	[null, <ore:torch>, <ore:torch>, <ore:torch>, null], 
+	[null, <v0idssmartbackpacks:upgrade_base>, <cyclicmagic:tool_torch_launcher>, <v0idssmartbackpacks:upgrade_base>, null], 
+	[null, <ore:torch>, <ore:torch>, <ore:torch>, null], 
+	[null, null, null, null, null]])
+  .setFluid(<liquid:crystalline> * 6000)
+  .addOutput(<v0idssmartbackpacks:upgrade_lighting>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();    
+  
+// Crafting Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_crafting>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, null, null, null], 
+	[null, <v0idssmartbackpacks:upgrade_base>, <ore:crafterWood>, <v0idssmartbackpacks:upgrade_base>, null], 
+	[null, <ore:crafterWood>, <rftoolscontrol:cpu_core_1000>, <ore:crafterWood>, null], 
+	[null, <v0idssmartbackpacks:upgrade_base>, <ore:crafterWood>, <v0idssmartbackpacks:upgrade_base>, null], 
+	[null, null, null, null, null]])
+  .setFluid(<liquid:crystalline> * 5000)
+  .addOutput(<v0idssmartbackpacks:upgrade_crafting>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+
+// Energy Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_energy_basic>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, null, null, null], 
+	[null, <v0idssmartbackpacks:upgrade_base>, <ore:oc:materialTransistor>, <v0idssmartbackpacks:upgrade_base>, null], 
+	[null, <ore:blockRedstone>, <ore:circuitBasic>, <ore:blockRedstone>, null], 
+	[null, <v0idssmartbackpacks:upgrade_base>, <ore:oc:materialTransistor>, <v0idssmartbackpacks:upgrade_base>, null], 
+	[null, null, null, null, null]])
+  .setFluid(<liquid:crystalline> * 2000)
+  .addOutput(<v0idssmartbackpacks:upgrade_energy_basic>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+
+// Advanced Energy Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_energy_advanced>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:insulatedGoldCableItem>, null, null], 
+	[null, <ore:oc:circuitChip1>, <overloaded:energy_extractor>, <ore:oc:circuitChip1>, null], 
+	[<ore:insulatedGoldCableItem>, <v0idssmartbackpacks:upgrade_energy_basic>, <ore:circuitAdvanced>, <v0idssmartbackpacks:upgrade_energy_basic>, <ore:insulatedGoldCableItem>], 
+	[null, <ore:insulatedGoldCableItem>, <ore:insulatedGoldCableItem>, <ore:insulatedGoldCableItem>, null], 
+	[null, null, <ore:insulatedGoldCableItem>, null, null]])
+  .setFluid(<liquid:crystalline> * 5000)
+  .addOutput(<v0idssmartbackpacks:upgrade_energy_advanced>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+
+// Ultimate Energy Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_energy_ultimate>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <techreborn:cable:4>, null, null], 
+	[null, <ore:oc:circuitChip3>, <botania:storage:3>, <ore:oc:circuitChip3>, null], 
+	[<techreborn:cable:4>, <v0idssmartbackpacks:upgrade_energy_advanced>, <ore:circuitElite>, <v0idssmartbackpacks:upgrade_energy_advanced>, <techreborn:cable:4>], 
+	[null, <techreborn:cable:4>, <techreborn:cable:4>, <techreborn:cable:4>, null], 
+	[null, null, <techreborn:cable:4>, null, null]])
+  .setFluid(<liquid:crystalline> * 10000)
+  .addOutput(<v0idssmartbackpacks:upgrade_energy_ultimate>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+
+// Furnace Generator Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_generator_furnace>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:leatherHardened>, null, null], 
+	[null, <ore:leatherHardened>, <ore:furnaceStone>, <ore:leatherHardened>, null], 
+	[<ore:leatherHardened>, <v0idssmartbackpacks:upgrade_base>, <actuallyadditions:block_coal_generator>, <v0idssmartbackpacks:upgrade_base>, <ore:leatherHardened>], 
+	[null, <ore:leatherHardened>, <ore:circuitBasic>, <ore:leatherHardened>, null], 
+	[null, null, <ore:leatherHardened>, null, null]])
+  .setFluid(<liquid:crystalline> * 4000)
+  .addOutput(<v0idssmartbackpacks:upgrade_generator_furnace>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansPliers>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();   
+
+// Solar Generator Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_generator_solar>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:leatherHardened>, null, null], 
+	[null, <ore:leatherHardened>, <ore:blockGlassColorless>, <ore:leatherHardened>, null], 
+	[<ore:leatherHardened>, <v0idssmartbackpacks:upgrade_base>, <solarflux:solar_panel_2>, <v0idssmartbackpacks:upgrade_base>, <ore:leatherHardened>], 
+	[null, <ore:leatherHardened>, <ore:circuitBasic>, <ore:leatherHardened>, null], 
+	[null, null, <ore:leatherHardened>, null, null]])
+  .setFluid(<liquid:crystalline> * 5000)
+  .addOutput(<v0idssmartbackpacks:upgrade_generator_solar>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create();  
+
+// Wind Generator Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_generator_wind>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:leatherHardened>, null, null], 
+	[null, <ore:leatherHardened>, <ore:blockGlassColorless>, <ore:leatherHardened>, null], 
+	[<ore:leatherHardened>, <v0idssmartbackpacks:upgrade_base>, <mekanismgenerators:generator:6>, <v0idssmartbackpacks:upgrade_base>, <ore:leatherHardened>], 
+	[null, <ore:leatherHardened>, <ore:blockGlassColorless>, <ore:leatherHardened>, null], 
+	[null, null, <ore:leatherHardened>, null, null]])
+  .setFluid(<liquid:crystalline> * 5000)
+  .addOutput(<v0idssmartbackpacks:upgrade_generator_wind>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+
+// Kinetic Generator Upgrade ============================================================================================================
+recipes.remove(<v0idssmartbackpacks:upgrade_generator_kinetic>);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+	[null, null, <ore:leatherHardened>, null, null], 
+	[null, <ore:leatherHardened>, <ore:blockGlassColorless>, <ore:leatherHardened>, null], 
+	[<ore:leatherHardened>, <v0idssmartbackpacks:upgrade_base>, <immersiveengineering:metal_device1:2>, <v0idssmartbackpacks:upgrade_base>, <ore:leatherHardened>], 
+	[null, <ore:leatherHardened>, <ore:circuitAdvanced>, <ore:leatherHardened>, null], 
+	[null, null, <ore:leatherHardened>, null, null]])
+  .setFluid(<liquid:crystalline> * 5000)
+  .addOutput(<v0idssmartbackpacks:upgrade_generator_kinetic>)
+  .addTool(<ore:artisansCutters>, 8)
+  .addTool(<ore:artisansNeedle>, 4)
+  .addTool(<ore:artisansPunch>, 8)
+  .create(); 
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  

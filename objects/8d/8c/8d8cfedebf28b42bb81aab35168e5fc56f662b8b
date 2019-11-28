@@ -1,0 +1,110 @@
+
+
+// Hinding ================================================================================
+mods.jei.JEI.removeAndHide(<overloaded:infinite_barrel>);
+mods.jei.JEI.removeAndHide(<overloaded:infinite_tank>);
+
+// Infinite Water Source ================================================================================
+recipes.remove(<overloaded:infinite_water_source>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:infinite_water_source>, [
+	[<ore:platePlatinum>, <evilcraft:dark_power_gem_block>, <ore:platePlatinum>, <evilcraft:dark_power_gem_block>, <ore:platePlatinum>], 
+	[<evilcraft:dark_power_gem_block>, <ore:enderpearl>, <mekanism:machineblock:12>, <ore:gearDiamatine>, <evilcraft:dark_power_gem_block>], 
+	[<ore:platePlatinum>, <rockhounding_chemistry:pipeline_pump>, <ore:circuitAdvanced>, <rockhounding_chemistry:pipeline_pump>, <ore:platePlatinum>], 
+	[<evilcraft:dark_power_gem_block>, <ore:runeWaterB>, <ore:ingotUltimate>, <ore:runeWaterB>, <evilcraft:dark_power_gem_block>], 
+	[<ore:platePlatinum>, <evilcraft:dark_power_gem_block>, <ore:platePlatinum>, <evilcraft:dark_power_gem_block>, <ore:platePlatinum>]
+]);
+
+// Infinite Capacitor ================================================================================
+recipes.remove(<overloaded:infinite_capacitor>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:infinite_capacitor>, [
+	[<contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>], 
+	[<ore:plateEvilMetal>, <extraplanets:wafer:3>, <ore:blockUltimate>, <extendedcrafting:material:11>, <extraplanets:wafer:3>, <extendedcrafting:material:11>, <ore:blockUltimate>, <extraplanets:wafer:3>, <ore:plateEvilMetal>], 
+	[<contenttweaker:plate_vibra>, <actuallyadditions:item_battery_quintuple>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <overloaded:energy_extractor>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <actuallyadditions:item_battery_quintuple>, <contenttweaker:plate_vibra>], 
+	[<ore:plateEvilMetal>, <ore:blockNetherStar>, <projectred-core:resource_item:341>, <ore:blockAbyssum>, <ore:blockValyrium>, <ore:blockAbyssum>, <projectred-core:resource_item:341>, <ore:blockNetherStar>, <ore:plateEvilMetal>], 
+	[<contenttweaker:plate_vibra>, <extendedcrafting:storage:6>, <ore:circuitUltimate>, <ore:blockAdamant>, <ore:circuitMaster>, <ore:blockAdamant>, <ore:circuitUltimate>, <extendedcrafting:storage:6>, <contenttweaker:plate_vibra>], 
+	[<ore:plateEvilMetal>, <ore:blockNetherStar>, <projectred-core:resource_item:341>, <ore:blockAbyssum>, <ore:blockValyrium>, <ore:blockAbyssum>, <projectred-core:resource_item:341>, <ore:blockNetherStar>, <ore:plateEvilMetal>], 
+	[<contenttweaker:plate_vibra>, <actuallyadditions:item_battery_quintuple>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <overloaded:energy_extractor>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <actuallyadditions:item_battery_quintuple>, <contenttweaker:plate_vibra>], 
+	[<ore:plateEvilMetal>, <extraplanets:wafer:3>, <ore:blockUltimate>, <ore:ingotCrystaltine>, <extraplanets:wafer:3>, <ore:ingotCrystaltine>, <ore:blockUltimate>, <extraplanets:wafer:3>, <ore:plateEvilMetal>], 
+	[<contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>, <ore:plateEvilMetal>, <contenttweaker:plate_vibra>]
+]);
+
+// Hyper Link Card ================================================================================
+recipes.remove(<overloaded:linking_card>);
+recipes.addShaped(<overloaded:linking_card>, [[<ore:plateChrome>, <projectred-core:resource_item:320>, <projectred-core:resource_item:320>],[<ore:plateChrome>, <thermalfoundation:glass:3>, <thermalfoundation:glass:3>], [<ore:plateChrome>, <thermalfoundation:glass:3>, <thermalfoundation:glass:3>]]);
+
+
+// Multi Chestplate ================================================================================
+recipes.remove(<overloaded:multi_chestplate>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:multi_chestplate>.withTag({}), [
+	[null, null, null, null, null, null, null], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <draconicevolution:draconic_energy_core>, null, <draconicevolution:draconic_energy_core>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<ore:blockValyrium>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <overloaded:energy_core>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:blockValyrium>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <extendedcrafting:singularity:49>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <ore:blockVibranium>, <contenttweaker:plate_vibra>, <ore:blockVibranium>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, null, null, null, null, null, <contenttweaker:plate_vibra>]
+]);
+
+// Multi Helmet ================================================================================
+recipes.remove(<overloaded:multi_helmet>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:multi_helmet>.withTag({}), [
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <draconicevolution:draconic_energy_core>, <extendedcrafting:singularity:49>, <draconicevolution:draconic_energy_core>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:blockVibranium>, <overloaded:energy_core>, <ore:blockVibranium>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<ore:blockValyrium>, <ore:blockNetherStar>, null, null, null, <ore:blockNetherStar>, <ore:blockValyrium>], 
+	[null, null, null, null, null, null, null], 
+	[null, null, null, null, null, null, null], 
+	[null, null, null, null, null, null, null]
+]);
+
+// Multi Leggins ================================================================================
+recipes.remove(<overloaded:multi_leggings>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:multi_leggings>.withTag({}), [
+	[null, null, null, null, null, null, null], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <draconicevolution:draconic_energy_core>, <contenttweaker:plate_vibra>, <draconicevolution:draconic_energy_core>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:blockVibranium>, <overloaded:energy_core>, <ore:blockVibranium>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:blockValyrium>, <extendedcrafting:singularity:49>, <ore:blockValyrium>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, null, null, null, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, null, null, null, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>]
+]);
+
+// Multi Boots ================================================================================
+recipes.remove(<overloaded:multi_boots>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:multi_boots>.withTag({}), [
+	[null, null, null, null, null, null, null], 
+	[null, null, null, null, null, null, null], 
+	[null, null, <contenttweaker:plate_vibra>, null, <contenttweaker:plate_vibra>, null, null], 
+	[null, <ore:blockNetherStar>, <ore:blockVibranium>, <extendedcrafting:singularity:49>, <ore:blockVibranium>, <ore:blockNetherStar>, null], 
+	[<ore:blockValyrium>, <overloaded:energy_core>, <draconicevolution:draconic_energy_core>, null, <draconicevolution:draconic_energy_core>, <overloaded:energy_core>, <ore:blockValyrium>], 
+	[<contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, null, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, null, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>]
+]);
+
+// Rail Gun ================================================================================
+recipes.remove(<overloaded:railgun>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <overloaded:railgun>.withTag({}), [
+	[null, null, null, null, null, null, null, null, <extendedcrafting:singularity:65>], 
+	[null, null, null, null, null, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <extendedcrafting:singularity:6>, null], 
+	[null, null, null, null, <contenttweaker:plate_vibra>, <ore:blockOsmiridium>, <ore:blockOsmiridium>, <contenttweaker:plate_vibra>, null], 
+	[null, null, null, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockOsmiridium>, <contenttweaker:plate_vibra>, null], 
+	[null, null, <contenttweaker:plate_vibra>, <botania:storage:1>, <ore:circuitMaster>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, null, null], 
+	[null, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:circuitMaster>, <botania:storage:1>, <contenttweaker:plate_vibra>, null, null, null], 
+	[<contenttweaker:plate_vibra>, <ore:blockUltimate>, <ore:blockNetherStar>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <ore:blockSilicon>, <ore:blockSilicon>, null, null], 
+	[null, <contenttweaker:plate_vibra>, <ore:blockUltimate>, <contenttweaker:plate_vibra>, null, <ore:blockSilicon>, <ore:blockSilicon>, <ore:blockSilicon>, null], 
+	[null, null, <contenttweaker:plate_vibra>, null, null, null, <ore:blockSilicon>, <ore:blockSilicon>, null]
+]);
+
+
+// Compressed Gravel ================================================================================
+recipes.addShaped(<overloaded:compressed_gravel>, [[<ore:gravel>, <ore:gravel>, <ore:gravel>],[<ore:gravel>, <ore:gravel>, <ore:gravel>], [<ore:gravel>, <ore:gravel>, <ore:gravel>]]);
+
+// Compressed Sand ================================================================================
+recipes.addShaped(<overloaded:compressed_sand>, [[<ore:sand>, <ore:sand>, <ore:sand>],[<ore:sand>, <ore:sand>, <ore:sand>], [<ore:sand>, <ore:sand>, <ore:sand>]]);
+
+// Compressed NetherRack ================================================================================
+recipes.addShaped(<overloaded:compressed_netherrack>, [[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>],[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>], [<ore:netherrack>, <ore:netherrack>, <ore:netherrack>]]);
+
+

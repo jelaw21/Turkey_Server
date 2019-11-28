@@ -1,0 +1,65 @@
+
+
+import mods.artisanworktables.builder.RecipeBuilder;
+
+
+/*
+  .setShaped([
+    [null, null, null, null, null],
+    [null, null, null, null, null],
+	[null, null, null, null, null],
+	[null, null, null, null, null],
+    [null, null, null, null, null]])
+	
+	<liquid:whiteessence>
+	<liquid:darkessence>
+	<liquid:essenceotg>
+*/
+
+
+//  Builders Wand ======================================================================================================================
+recipes.remove(<extrautils2:itembuilderswand>);
+
+RecipeBuilder.get("mage")
+  .setShaped([
+	[null, <ore:blockMagicalWood>, <ore:blockMagicalWood>, <actuallyadditions:item_crystal:4>, <ore:manaDiamond>], 
+	[null, null, <overloaded:compressed_obsidian>, <ore:dustMana>, <actuallyadditions:item_crystal:4>], 
+	[null, null, <ore:stickTreatedWood>, <overloaded:compressed_obsidian>, <ore:blockMagicalWood>], 
+	[null, <ore:stickTreatedWood>, null, null, <ore:blockMagicalWood>], 
+	[<ore:stickTreatedWood>, null, null, null, null]])
+  .setFluid(<liquid:whiteessence> * 5000)
+  .addOutput(<extrautils2:itembuilderswand>)
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addTool(<ore:artisansAthame>, 12)
+  .create();
+
+//  Deconstrution Wand ======================================================================================================================
+recipes.remove(<extrautils2:itemdestructionwand>);
+
+RecipeBuilder.get("mage")
+  .setShaped([
+	[null, null, <ore:blockMagicalWood>, <minecraft:ender_eye>, <ore:blockEmerald>], 
+	[null, null, <ore:plateEnderium>, <ore:dustMana>, <minecraft:ender_eye>], 
+	[null, null, <ore:rodBlaze>, <ore:plateEnderium>, <ore:blockMagicalWood>], 
+	[null, <ore:stickTreatedWood>, null, null, null], 
+	[<ore:stickTreatedWood>, null, null, null, null]])
+  .setFluid(<liquid:darkessence> * 10000)
+  .addOutput(<extrautils2:itemdestructionwand>)
+  .addTool(<ore:artisansGrimoire>, 40)
+  .addTool(<ore:artisansAthame>, 40)
+  .create();
+  
+
+
+
+
+
+
+  
+  
+  
+
+
+
+  
+  

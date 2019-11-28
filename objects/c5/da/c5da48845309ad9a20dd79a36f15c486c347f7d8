@@ -1,0 +1,186 @@
+
+
+
+
+// Creative Energy Cube Mekanism ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}), [
+	[<contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>], 
+	[<extraplanets:tier8_items:3>, <rftoolscontrol:cpu_core_2000>, <mysticalagriculture:gear:9>, <extendedcrafting:singularity:30>, <draconicevolution:awakened_core>, <extendedcrafting:singularity:30>, <mysticalagriculture:gear:9>, <rftoolscontrol:cpu_core_2000>, <extraplanets:tier8_items:3>], 
+	[<contenttweaker:plate_vibra>, <ore:blockTungstensteel>, <evilcraft:promise_acceptor:2>, <ore:gearDraconiumAwakened>, <ore:blockUltimate>, <ore:gearDraconiumAwakened>, <evilcraft:promise_acceptor:2>, <ore:blockTungstensteel>, <contenttweaker:plate_vibra>], 
+	[<extraplanets:tier8_items:3>, <ore:blockSolarium>, <ore:runePrideB>, <ore:blockVibranium>, <ore:circuitUltimate>, <ore:blockVibranium>, <ore:runePrideB>, <ore:blockSolarium>, <extraplanets:tier8_items:3>], 
+	[<contenttweaker:plate_vibra>, <extendedcrafting:singularity:49>, <extendedcrafting:storage:6>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:circuitUltimate>, <extendedcrafting:storage:6>, <extendedcrafting:singularity:49>, <contenttweaker:plate_vibra>], 
+	[<extraplanets:tier8_items:3>, <ore:blockSolarium>, <actuallyadditions:item_battery_quintuple>, <ore:blockVibranium>, <ore:circuitUltimate>, <ore:blockVibranium>, <actuallyadditions:item_battery_quintuple>, <ore:blockSolarium>, <extraplanets:tier8_items:3>], 
+	[<contenttweaker:plate_vibra>, <ore:blockTungstensteel>, <evilcraft:promise_acceptor:2>, <ore:gearDraconiumAwakened>, <ore:blockUltimate>, <ore:gearDraconiumAwakened>, <evilcraft:promise_acceptor:2>, <ore:blockTungstensteel>, <contenttweaker:plate_vibra>], 
+	[<extraplanets:tier8_items:3>, <rftoolscontrol:cpu_core_2000>, <mysticalagriculture:gear:9>, <extendedcrafting:singularity:30>, <draconicevolution:awakened_core>, <extendedcrafting:singularity:30>, <mysticalagriculture:gear:9>, <rftoolscontrol:cpu_core_2000>, <extraplanets:tier8_items:3>], 
+	[<contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>]
+]);
+
+// Creative Mana Pool ================================================================================
+recipes.remove(<botania:pool:1>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool:1>, [
+	[<botania:storage:1>, <ore:blockNetherStar>, <botania:storage:1>, null, null, null, <botania:storage:1>, <ore:blockNetherStar>, <botania:storage:1>], 
+	[<botania:storage:1>, <extendedcrafting:singularity:3>, <botania:storage:1>, null, null, null, <botania:storage:1>, <extendedcrafting:singularity:26>, <botania:storage:1>], 
+	[<botania:storage:1>, <ore:blockValyrium>, <botania:storage:1>, null, null, null, <botania:storage:1>, <ore:blockValyrium>, <botania:storage:1>], 
+	[<botania:storage:1>, <ore:blockVibranium>, <botania:storage:1>, null, null, null, <botania:storage:1>, <ore:blockVibranium>, <botania:storage:1>], 
+	[<botania:storage:1>, <ore:blockAdamant>, <botania:storage:1>, null, null, null, <botania:storage:1>, <ore:blockAdamant>, <botania:storage:1>], 
+	[<botania:storage:1>, <ore:blockAdamant>, <extendedcrafting:storage:6>, <botania:storage:1>, <extendedcrafting:storage:6>, <botania:storage:1>, <extendedcrafting:storage:6>, <ore:blockAdamant>, <botania:storage:1>], 
+	[<botania:storage:1>, <botania:storage:4>, <extendedcrafting:material:13>, <extendedcrafting:material:40>, <ore:blockUltimate>, <extendedcrafting:material:40>, <extendedcrafting:material:13>, <botania:storage:4>, <botania:storage:1>], 
+	[<botania:storage:1>, <techreborn:storage2:1>, <ore:blockPlatinum>, <ore:plateInfinity>, <extendedcrafting:singularity:66>, <ore:plateInfinity>, <ore:blockPlatinum>, <techreborn:storage2:1>, <botania:storage:1>], 
+	[<botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <ore:blockNetherStar>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>]
+]);
+
+// Creative GP Mill ================================================================================
+recipes.remove(<extrautils2:passivegenerator:6>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:passivegenerator:6>, [
+	[<ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <botania:storage:1>, <extendedcrafting:storage:6>, <ore:gearCosmicNeutronium>, <extendedcrafting:singularity:3>, <ore:gearCosmicNeutronium>, <extendedcrafting:storage:6>, <botania:storage:1>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <chisel:voidstone:4>, <ore:plateDraconium>, <ore:plateDraconium>, <ore:circuitUltimate>, <ore:plateDraconium>, <ore:plateDraconium>, <chisel:voidstone:4>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:plateDraconium>, <rftoolscontrol:cpu_core_2000>, <integrateddynamics:energy_battery>.withTag({capacity:16000000}), <extendedcrafting:material:13>, <integrateddynamics:energy_battery>.withTag({capacity:16000000}), <rftoolscontrol:cpu_core_2000>, <ore:plateDraconium>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <botania:storage:3>, <ore:blockPlatinum>, <ore:plateInfinity>, <ore:circuitUltimate>, <ore:plateInfinity>, <ore:blockPlatinum>, <botania:storage:3>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:plateDraconium>, <rftoolscontrol:cpu_core_2000>, <integrateddynamics:energy_battery>.withTag({capacity:16000000}), <extendedcrafting:material:13>, <integrateddynamics:energy_battery>.withTag({capacity:16000000}), <rftoolscontrol:cpu_core_2000>, <ore:plateDraconium>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <chisel:voidstone:4>, <ore:plateDraconium>, <ore:plateDraconium>, <ore:circuitUltimate>, <ore:plateDraconium>, <ore:plateDraconium>, <chisel:voidstone:4>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <botania:storage:1>, <ore:netherStar>, <ore:gearCosmicNeutronium>, <extendedcrafting:singularity:49>, <ore:gearCosmicNeutronium>, <ore:netherStar>, <botania:storage:1>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>]
+]);
+
+// Creative Modifier ================================================================================
+recipes.remove(<tconstruct:materials:50>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <tconstruct:materials:50>, [
+	[<ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:ingotLumix>, <ore:ingotLumix>, <evilcraft:promise_acceptor:1>, <ore:ingotLumix>, <ore:ingotLumix>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:ingotLumix>, <ore:ingotEezo>, <ore:ingotUltimate>, <ore:ingotEezo>, <ore:ingotLumix>, <ore:blockGold>], 
+	[<ore:blockGold>, <evilcraft:promise_acceptor:1>, <ore:ingotUltimate>, <ore:dustMana>, <ore:ingotUltimate>, <evilcraft:promise_acceptor:1>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:ingotLumix>, <ore:ingotEezo>, <ore:ingotUltimate>, <ore:ingotEezo>, <ore:ingotLumix>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:ingotLumix>, <ore:ingotLumix>, <evilcraft:promise_acceptor:1>, <ore:ingotLumix>, <ore:ingotLumix>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>]
+]);
+
+// Infinity Drill 13*13*13 ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:infinity_drill>.withTag({Energy: 9223372036854775807 as long, Fluid: {FluidName: "biofuel", Amount: 0}, Special: 0 as byte, Selected: "ARTIFACT"}), [
+	[null, null, null, null, <contenttweaker:plate_vibra>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>], 
+	[null, null, null, <contenttweaker:plate_vibra>, <extendedcrafting:storage:6>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>], 
+	[null, null, <contenttweaker:plate_vibra>, <botania:storage:1>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>], 
+	[null, <contenttweaker:plate_vibra>, <botania:storage:1>, <actuallyadditions:block_shock_suppressor>, <actuallyadditions:block_shock_suppressor>, <actuallyadditions:block_shock_suppressor>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>, <ore:craftingTungstenGrinder>], 
+	[<contenttweaker:plate_vibra>, <botania:storage:1>, <ore:blockVibranium>, <ore:circuitUltimate>, <extendedcrafting:material:13>, <actuallyadditions:block_shock_suppressor>, <ore:craftingTungstenGrinder>, <extendedcrafting:storage:6>, <contenttweaker:plate_vibra>], 
+	[<ore:blockUltimate>, <extendedcrafting:singularity:34>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:circuitUltimate>, <actuallyadditions:block_shock_suppressor>, <botania:storage:1>, <contenttweaker:plate_vibra>, null], 
+	[<ore:blockUltimate>, <extendedcrafting:singularity:29>, <ore:gearCosmicNeutronium>, <ore:circuitUltimate>, <ore:blockVibranium>, <botania:storage:1>, <contenttweaker:plate_vibra>, <ore:blockSilicon>, null], 
+	[<ore:blockUltimate>, <ore:gearCosmicNeutronium>, <extendedcrafting:singularity:29>, <extendedcrafting:singularity:34>, <botania:storage:1>, <contenttweaker:plate_vibra>, <ore:blockSilicon>, <ore:blockSilicon>, null], 
+	[<ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <contenttweaker:plate_vibra>, null, null, null, <ore:blockSilicon>]
+]);
+
+// Creative Fluid Tank ================================================================================
+recipes.remove(<fluidtank:blocktankcreative>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <fluidtank:blocktankcreative>, [
+	[<ore:plateInfinity>, <ore:blockLudicrite>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockLudicrite>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <ore:blockLudicrite>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockLudicrite>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <ore:blockLudicrite>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockLudicrite>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <botania:storage:1>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <botania:storage:1>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <botania:storage:1>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <botania:storage:1>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <botania:storage:1>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <botania:storage:1>, <ore:plateInfinity>], 
+	[<ore:blockUltimate>, <botania:storage:1>, <extendedcrafting:singularity:33>, <ore:blockGlassHardened>, <extendedcrafting:singularity:33>, <ore:blockGlassHardened>, <extendedcrafting:singularity:33>, <botania:storage:1>, <ore:blockUltimate>], 
+	[<ore:blockUltimate>, <ore:blockTungstensteel>, <ore:blockTungstensteel>, <ore:blockTungstensteel>, <extendedcrafting:storage:6>, <ore:blockTungstensteel>, <ore:blockTungstensteel>, <ore:blockTungstensteel>, <ore:blockUltimate>], 
+	[<ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>]
+]);
+
+
+
+// Creative Spikes ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:spike_creative> * 32, [
+	[null, null, null, <contenttweaker:plate_vibra>, <ore:blockInfinity>, <contenttweaker:plate_vibra>, null, null, null], 
+	[null, null, <contenttweaker:plate_vibra>, <ore:blockOsmiridium>, <ore:blockOsmiridium>, <ore:blockOsmiridium>, <contenttweaker:plate_vibra>, null, null], 
+	[null, null, <contenttweaker:plate_vibra>, <ore:blockOsmiridium>, <extendedcrafting:singularity:16>, <ore:blockOsmiridium>, <contenttweaker:plate_vibra>, null, null], 
+	[null, <contenttweaker:plate_vibra>, <ore:blockLudicrite>, <ore:blockLudicrite>, <ore:blockLudicrite>, <ore:blockLudicrite>, <ore:blockLudicrite>, <contenttweaker:plate_vibra>, null], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <ore:blockLudicrite>, <ore:blockLudicrite>, <ore:blockLudicrite>, <ore:blockLudicrite>, <ore:blockLudicrite>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <extendedcrafting:singularity:6>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <botania:storage:1>, <contenttweaker:plate_vibra>], 
+	[<ore:blockUltimate>, <ore:blockUltimate>, <extendedcrafting:singularity:4>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <extendedcrafting:singularity:5>, <ore:blockUltimate>, <ore:blockUltimate>], 
+	[<ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>, <ore:blockUltimate>]
+]);
+
+
+// Creative Flux Capacitor Draconic Evolution ================================================================================
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <draconicevolution:draconium_capacitor:2>.withTag({Energy: 1073741823}), [
+	[null, null, null, <ore:blockUltimate>, <ore:blockSolarium>, <ore:blockUltimate>, null, null, null], 
+	[null, <contenttweaker:plate_vibra>, <mysticalagriculture:gear:9>, <extendedcrafting:singularity:50>, <draconicevolution:awakened_core>, <extendedcrafting:singularity:50>, <mysticalagriculture:gear:9>, <contenttweaker:plate_vibra>, null], 
+	[<ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <rftoolscontrol:cpu_core_2000>, <ore:gearDraconiumAwakened>, <rftoolscontrol:cpu_core_2000>, <ore:gearDraconiumAwakened>, <rftoolscontrol:cpu_core_2000>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <ore:runePrideB>, <ore:blockTungstensteel>, <ore:circuitUltimate>, <ore:blockTungstensteel>, <ore:runePrideB>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:gearCosmicNeutronium>, <extendedcrafting:singularity:49>, <ore:circuitUltimate>, <ore:circuitMaster>, <ore:circuitUltimate>, <extendedcrafting:singularity:49>, <ore:gearCosmicNeutronium>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <ore:runeEnvyB>, <ore:blockTungstensteel>, <ore:circuitUltimate>, <ore:blockTungstensteel>, <ore:runeEnvyB>, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>], 
+	[<ore:plateCosmicNeutronium>, <contenttweaker:plate_vibra>, <evilcraft:promise_acceptor:2>, <ore:gearDraconiumAwakened>, <draconicevolution:awakened_core>, <ore:gearDraconiumAwakened>, <evilcraft:promise_acceptor:2>, <contenttweaker:plate_vibra>, <ore:plateCosmicNeutronium>], 
+	[null, <contenttweaker:plate_vibra>, <mysticalagriculture:gear:9>, <extendedcrafting:singularity:33>, <rftoolscontrol:cpu_core_2000>, <extendedcrafting:singularity:33>, <mysticalagriculture:gear:9>, <contenttweaker:plate_vibra>, null], 
+	[null, null, null, <ore:blockUltimate>, <ore:blockSolarium>, <ore:blockUltimate>, null, null, null]
+]);
+
+// Creative Dank Null ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <danknull:dank_null_6>, [
+	[<contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:blockUltimate>, <botania:storage:1>, <techreborn:part:39>, <ore:blockAdamant>, <techreborn:part:39>, <botania:storage:1>, <ore:blockUltimate>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:glassReinforced>, <actuallyadditions:block_crystal_empowered:4>, <ironchest:iron_chest:5>, <contenttweaker:card_5>, <ironchest:iron_chest:5>, <actuallyadditions:block_crystal_empowered:4>, <ore:glassReinforced>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:gearCrystalMatrix>, <ore:blockLudicrite>, <actuallyadditions:block_crystal_empowered:3>, <ore:circuitMaster>, <actuallyadditions:block_crystal_empowered:3>, <ore:blockLudicrite>, <ore:gearCrystalMatrix>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:blockAdamant>, <botania:storage:4>, <ore:gearCosmicNeutronium>, <extendedcrafting:singularity_ultimate>, <ore:gearCosmicNeutronium>, <botania:storage:4>, <ore:blockAdamant>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:gearCrystalMatrix>, <ore:blockLudicrite>, <actuallyadditions:block_crystal_empowered:3>, <danknull:dank_null_5:*>, <actuallyadditions:block_crystal_empowered:3>, <ore:blockLudicrite>, <ore:gearCrystalMatrix>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:glassReinforced>, <actuallyadditions:block_crystal_empowered:4>, <ironchest:iron_chest:5>, <contenttweaker:card_5>, <ironchest:iron_chest:5>, <actuallyadditions:block_crystal_empowered:4>, <ore:glassReinforced>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:blockUltimate>, <extendedcrafting:storage:6>, <techreborn:part:39>, <ore:blockAdamant>, <techreborn:part:39>, <extendedcrafting:storage:6>, <ore:blockUltimate>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>]
+]);
+
+// Creative Drawer Upgrade ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <storagedrawers:upgrade_creative> * 4, [
+	[<contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:gearCrystalMatrix>, <storagedrawers:upgrade_storage:4>, <ore:blockVibranium>, <mysticalagriculture:gear:9>, <ore:blockVibranium>, <storagedrawers:upgrade_storage:4>, <ore:gearCrystalMatrix>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <storagedrawers:upgrade_storage:4>, <ironchest:iron_chest:5>, <ore:plateiridiumAlloy>, <ore:blockAdamant>, <ore:plateiridiumAlloy>, <ironchest:iron_chest:5>, <storagedrawers:upgrade_storage:4>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:blockUltimate>, <ore:plateiridiumAlloy>, <ironchest:iron_chest:5>, <actuallyadditions:block_crystal_empowered:4>, <ironchest:iron_chest:5>, <ore:plateiridiumAlloy>, <ore:blockUltimate>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <contenttweaker:card_5>, <ore:blockDraconium>, <actuallyadditions:block_crystal_empowered:4>, <extendedcrafting:singularity_ultimate>, <actuallyadditions:block_crystal_empowered:4>, <ore:blockDraconium>, <contenttweaker:card_5>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:blockUltimate>, <ore:plateiridiumAlloy>, <ironchest:iron_chest:5>, <actuallyadditions:block_crystal_empowered:4>, <ironchest:iron_chest:5>, <ore:plateiridiumAlloy>, <ore:blockUltimate>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <storagedrawers:upgrade_storage:4>, <ironchest:iron_chest:5>, <ore:plateiridiumAlloy>, <ore:blockAdamant>, <ore:plateiridiumAlloy>, <ironchest:iron_chest:5>, <storagedrawers:upgrade_storage:4>, <contenttweaker:plate_vibra>], 
+	[<ore:plateInsanium>, <ore:gearCrystalMatrix>, <storagedrawers:upgrade_storage:4>, <ore:blockVibranium>, <mysticalagriculture:gear:9>, <ore:blockVibranium>, <storagedrawers:upgrade_storage:4>, <ore:gearCrystalMatrix>, <ore:plateInsanium>], 
+	[<contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>, <ore:plateInsanium>, <contenttweaker:plate_vibra>]
+]);
+
+
+// Creative Builders Wand ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, [
+	[null, null, null, null, <ore:dustMana>, <ore:dustMana>, <ore:dustMana>, <ore:dustMana>, <extendedcrafting:storage:6>], 
+	[null, null, null, null, <contenttweaker:dustotg>, <contenttweaker:dustotg>, <ore:rodBlaze>, <taiga:vibranium_block>, <ore:dustMana>], 
+	[null, null, <ore:blockChrome>, <botania:storage:1>, <botania:storage:4>, <ore:rodBlaze>, <ore:gearInsanium>, <ore:rodBlaze>, <ore:dustMana>], 
+	[null, null, <botania:storage:1>, <actuallyadditions:block_shock_suppressor>, <ore:rodBlaze>, <extendedcrafting:singularity_custom:3>, <ore:rodBlaze>, <contenttweaker:dustotg>, <ore:dustMana>], 
+	[null, null, <botania:storage:4>, <ore:rodBlaze>, <extrautils2:itembuilderswand>, <ore:rodBlaze>, <botania:storage:4>, <contenttweaker:dustotg>, <ore:dustMana>], 
+	[null, null, <ore:rodBlaze>, <ore:blockUltimate>, <ore:rodBlaze>, <actuallyadditions:block_shock_suppressor>, <botania:storage:1>, null, null], 
+	[null, <ore:rodBlaze>, <contenttweaker:card_2>, <ore:rodBlaze>, <botania:storage:4>, <botania:storage:1>, <ore:blockChrome>, null, null], 
+	[<ore:rodBlaze>, <techreborn:storage2:1>, <ore:rodBlaze>, null, null, null, null, null, null], 
+	[<ore:rodBlaze>, <ore:rodBlaze>, null, null, null, null, null, null, null]
+]);
+
+
+// Creative Draconic Exchanger ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <draconicevolution:creative_exchanger>, [
+	[null, null, null, <contenttweaker:plate_vibra>, <contenttweaker:plate_vibra>, <extendedcrafting:storage:6>, <ore:blockDraconiumAwakened>, <ore:blockDraconiumAwakened>, <ore:cropMelon>], 
+	[null, <ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockVulcanite>, <extendedcrafting:storage:6>, <ore:blockDraconium>, <ore:circuitMaster>, <ore:gearInfinity>, <ore:blockDraconiumAwakened>], 
+	[null, <ore:blockNetherStar>, <actuallyadditions:block_crystal_empowered:4>, <ore:blockDraconium>, <ore:blockAdamant>, <ore:circuitMaster>, <extendedcrafting:singularity_ultimate>, <ore:circuitMaster>, <ore:blockDraconiumAwakened>], 
+	[null, <ore:blockVulcanite>, <ore:blockInsanium>, <ore:blockAdamant>, <ore:rodBlaze>, <ore:blockUltimate>, <ore:circuitMaster>, <ore:blockDraconium>, <extendedcrafting:storage:6>], 
+	[null, <contenttweaker:plate_vibra>, <ore:blockCrystalMatrix>, <ore:rodBlaze>, <ore:blockUltimate>, <ore:rodBlaze>, <ore:blockAdamant>, <extendedcrafting:storage:6>, <contenttweaker:plate_vibra>], 
+	[<contenttweaker:plate_vibra>, <ore:blockCosmicNeutronium>, <ore:blockCosmicNeutronium>, <ore:blockCrystaltine>, <ore:rodBlaze>, <ore:blockAdamant>, <ore:blockDraconium>, <ore:blockVulcanite>, <contenttweaker:plate_vibra>], 
+	[<techreborn:storage2:1>, <ore:blockCosmicNeutronium>, <contenttweaker:card_6>, <ore:blockCosmicNeutronium>, <ore:blockCrystalMatrix>, <ore:blockInsanium>, <actuallyadditions:block_crystal_empowered:4>, <ore:blockNetherStar>, null], 
+	[<ore:rodBlaze>, <ore:rodBlaze>, <ore:blockCosmicNeutronium>, <ore:blockCosmicNeutronium>, <contenttweaker:plate_vibra>, <ore:blockVulcanite>, <ore:blockNetherStar>, <ore:blockNetherStar>, null], 
+	[<techreborn:storage2:1>, <ore:rodBlaze>, <techreborn:storage2:1>, <contenttweaker:plate_vibra>, null, null, null, null, null]
+]);
+
+
+// Creative Gas Tankl ================================================================================
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:gastank>.withTag({tier: 4}), [
+	[null, null, <actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal_empowered:4>, null, null], 
+	[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:2>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:2>], 
+	[<ore:blockCrystalMatrix>, <ore:blockUltimate>, <mysticalagriculture:gear:9>, <ore:blockUltimate>, <extendedcrafting:singularity:24>, <ore:blockUltimate>, <mysticalagriculture:gear:9>, <ore:blockUltimate>, <ore:blockCrystalMatrix>], 
+	[<ore:blockTungstensteel>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <extendedcrafting:storage:6>, <ore:blockUltimate>, <extendedcrafting:storage:6>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <ore:blockTungstensteel>], 
+	[<ore:blockTungstensteel>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <extendedcrafting:storage:6>, <contenttweaker:card_5>, <extendedcrafting:storage:6>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <ore:blockTungstensteel>], 
+	[<ore:blockTungstensteel>, <contenttweaker:plate_vibra>, <ore:blockNetherStar>, <ore:blockAdamant>, <extendedcrafting:singularity:27>, <ore:blockAdamant>, <ore:blockNetherStar>, <contenttweaker:plate_vibra>, <ore:blockTungstensteel>], 
+	[<ore:blockTungstensteel>, <contenttweaker:plate_vibra>, <ore:blockCrystaltine>, <extendedcrafting:storage:6>, <ore:materialPromiseAcceptor>, <extendedcrafting:storage:6>, <ore:blockCrystaltine>, <contenttweaker:plate_vibra>, <ore:blockTungstensteel>], 
+	[<ore:blockTungstensteel>, <contenttweaker:plate_vibra>, <extendedcrafting:singularity:35>, <draconicevolution:awakened_core>, <bloodarsenal:slate:4>, <draconicevolution:awakened_core>, <extendedcrafting:singularity_custom:2>, <contenttweaker:plate_vibra>, <ore:blockTungstensteel>], 
+	[<ore:blockTungstensteel>, <techreborn:storage2:1>, <techreborn:storage2:1>, <techreborn:storage2:1>, <techreborn:storage2:1>, <techreborn:storage2:1>, <techreborn:storage2:1>, <techreborn:storage2:2>, <ore:blockTungstensteel>]
+]);
+

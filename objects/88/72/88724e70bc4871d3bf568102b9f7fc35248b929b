@@ -1,0 +1,118 @@
+
+
+//mods.integrateddynamics.MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
+
+// Disable Squeezer Recipes =============================================================================================
+mods.integrateddynamics.DryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
+mods.integrateddynamics.MechanicalDryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
+
+
+//Menril Torches ================================================================================
+recipes.remove(<integrateddynamics:menril_torch>);
+recipes.remove(<integrateddynamics:menril_torch_stone>);
+recipes.addShapeless(<integrateddynamics:menril_torch> * 2, [<ore:stickWood>,<integrateddynamics:menril_berries>,<ore:string>]);
+recipes.addShapeless(<integrateddynamics:menril_torch> * 4, [<ore:stickIron>,<integrateddynamics:menril_berries>,<ore:string>]);
+recipes.addShapeless(<integrateddynamics:menril_torch> * 6, [<ore:stickSteel>,<integrateddynamics:menril_berries>,<ore:string>]);
+recipes.addShapeless(<integrateddynamics:menril_torch> * 6, [<ore:stickAluminum>,<integrateddynamics:menril_berries>,<ore:string>]);
+recipes.addShapeless(<integrateddynamics:menril_torch_stone>, [<ore:rodStone>,<integrateddynamics:menril_berries>]);
+
+
+// Mechanical Squeezer =============================================================================================
+recipes.remove(<integrateddynamics:mechanical_squeezer>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <integrateddynamics:mechanical_squeezer>, [
+	[<ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>], 
+	[<ore:plateSteel>, <ore:gearDemonicMetal>, <ore:motor>, <ore:gearDemonicMetal>, <ore:plateSteel>], 
+	[<ore:plateElectrum>, <techreborn:part:37>, <ore:circuitAdvanced>, <ore:actuator>, <ore:plateElectrum>], 
+	[<ore:plateSteel>, <projectred-expansion:charged_battery>, <rftoolscontrol:cpu_core_1000>, <projectred-expansion:charged_battery>, <ore:plateSteel>], 
+	[<ore:plateElectrum>, <ore:plateSteel>, <ore:plateSignalum>, <ore:plateSteel>, <ore:plateElectrum>]
+]);
+
+
+// Mechanical Drying Basin =============================================================================================
+recipes.remove(<integrateddynamics:mechanical_drying_basin>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <integrateddynamics:mechanical_drying_basin>, [
+	[<ore:plateIron>, <ore:plateElectrum>, <ore:plateIron>, <ore:plateElectrum>, <ore:plateIron>], 
+	[<ore:plateElectrum>, <projectred-expansion:charged_battery>, <ore:blockRedstone>, <projectred-expansion:charged_battery>, <ore:plateElectrum>], 
+	[<ore:plateIron>, <minecraft:bucket>, <ore:circuitAdvanced>, <minecraft:bucket>, <ore:plateIron>], 
+	[<ore:plateElectrum>, <stevescarts:modulecomponents:65>, <overloaded:compressed_obsidian>, <stevescarts:modulecomponents:65>, <ore:plateElectrum>], 
+	[<ore:plateIron>, <ore:plateElectrum>, <ore:plateIron>, <ore:plateElectrum>, <ore:plateIron>]
+]);
+
+// Drying Basin =============================================================================================
+recipes.remove(<integrateddynamics:drying_basin>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <integrateddynamics:drying_basin>, [
+	[null, null, null, null, null], 
+	[<ore:logWood>, <ore:ingotBlackIron>, null, <ore:ingotBlackIron>, <ore:logWood>], 
+	[<ore:logWood>, <ore:ingotBlackIron>, null, <ore:ingotBlackIron>, <ore:logWood>], 
+	[<ore:logWood>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:logWood>], 
+	[<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]
+]);
+
+// Squeezer =============================================================================================
+recipes.remove(<integrateddynamics:squeezer>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <integrateddynamics:squeezer>, [
+	[<ore:stone>, null, null, null, <ore:stone>], 
+	[<ore:stone>, <ore:plateIron>, <ore:plateIron>, <ore:plateIron>, <ore:stone>], 
+	[<ore:stone>, null, null, null, <ore:stone>], 
+	[<ore:stone>, null, null, null, <ore:stone>], 
+	[<ore:stone>, <ore:plateIron>, <ore:plateIron>, <ore:plateIron>, <ore:stone>]
+]);
+
+
+// Battery =============================================================================================
+recipes.removeByRecipeName("integrateddynamics:energy_battery");
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <integrateddynamics:energy_battery>.withTag({capacity: 1000000}), [
+	[<ore:plateSilicon>, <ore:plateIron>, <ore:plateSilicon>, <ore:plateIron>, <ore:plateSilicon>], 
+	[<ore:plateIron>, <integrateddynamics:crystalized_menril_chunk>, <ore:blockRedstone>, <integrateddynamics:crystalized_menril_chunk>, <ore:plateIron>], 
+	[<ore:plateSilicon>, <projectred-expansion:charged_battery>, <projectred-core:resource_item:400>, <projectred-expansion:charged_battery>, <ore:plateSilicon>], 
+	[<ore:plateIron>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:crystalized_menril_chunk>, <ore:plateIron>], 
+	[<ore:plateSilicon>, <ore:plateIron>, <ore:plateSilicon>, <ore:plateIron>, <ore:plateSilicon>]
+]);
+
+/*
+// 2M Battery =============================================================================================
+recipes.addShapeless(<integrateddynamics:energy_battery>.withTag({capacity: 2000000}), [<integrateddynamics:energy_battery>.withTag({capacity: 1000000}).onlyWithTag({capacity: 1000000}),<integrateddynamics:energy_battery>.withTag({capacity: 1000000}).onlyWithTag({capacity: 1000000})]);
+
+// 4M Battery =============================================================================================
+recipes.addShapeless(<integrateddynamics:energy_battery>.withTag({capacity: 4000000}), [<integrateddynamics:energy_battery>.withTag({capacity: 2000000}).onlyWithTag({capacity: 2000000}),<integrateddynamics:energy_battery>.withTag({capacity: 2000000}).onlyWithTag({capacity: 2000000})]);
+
+// 8M Battery =============================================================================================
+recipes.addShapeless(<integrateddynamics:energy_battery>.withTag({capacity: 8000000}), [<integrateddynamics:energy_battery>.withTag({capacity: 4000000}).onlyWithTag({capacity: 4000000}),<integrateddynamics:energy_battery>.withTag({capacity: 4000000}).onlyWithTag({capacity: 4000000})]);
+
+// 16M Battery =============================================================================================
+recipes.addShapeless(<integrateddynamics:energy_battery>.withTag({capacity: 16000000}), [<integrateddynamics:energy_battery>.withTag({capacity: 8000000}).onlyWithTag({capacity: 8000000}),<integrateddynamics:energy_battery>.withTag({capacity: 8000000}).onlyWithTag({capacity: 8000000})]);
+
+// 64M Battery =============================================================================================
+recipes.addShaped(<integrateddynamics:energy_battery>.withTag({capacity: 64000000}), [[<integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), null],[<integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), null], [null, null, null]]);
+
+// 144M Battery =============================================================================================
+recipes.addShaped(<integrateddynamics:energy_battery>.withTag({capacity: 144000000}), [[<integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000})],[<integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000})], [<integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000}), <integrateddynamics:energy_battery>.withTag({capacity: 16000000}).onlyWithTag({capacity: 16000000})]]);
+*/
+
+// Variable Card =============================================================================================
+recipes.removeByRecipeName("integrateddynamics:variable");
+recipes.addShaped(<integrateddynamics:variable> * 2, [[<integrateddynamics:crystalized_menril_chunk>, <minecraft:paper>, <integrateddynamics:crystalized_menril_chunk>],[<integrateddynamics:crystalized_menril_chunk>, <rftoolscontrol:program_card>, <integrateddynamics:crystalized_menril_chunk>], [<integrateddynamics:crystalized_menril_chunk>, <minecraft:paper>, <integrateddynamics:crystalized_menril_chunk>]]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
